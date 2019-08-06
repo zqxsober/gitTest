@@ -5,11 +5,9 @@
     <groupId>com.zqxsober</groupId>
     <artifactId>zqxsober_parent</artifactId>
     <version>1.0</version>
-
     <packaging>pom</packaging>
 
     <modules>
-        <module>gitTest</module>
     </modules>
 
     <properties>
@@ -18,31 +16,6 @@
         <encoding>UTF-8</encoding>
         <spring.version>4.3.2.RELEASE</spring.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.rabbitmq</groupId>
-                <artifactId>amqp-client</artifactId>
-                <version>3.5.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper</artifactId>
-                <version>3.7.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jsqlparser</groupId>
-                <artifactId>jsqlparser</artifactId>
-                <version>0.9.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>1.1.12</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <resources>
@@ -78,23 +51,4 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>nexus</name>
-            <url>http://192.168.4.107:8088/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>nexus</id>
-            <name>nexus</name>
-            <url>http://192.168.4.107:8088/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>
